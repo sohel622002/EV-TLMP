@@ -274,6 +274,7 @@ header > .header {
   background-size: cover;
   background-color: black;
   padding: 50px 20px;
+  border-bottom: 2px solid white;
 }
 
 .parkinglot-payment-header{
@@ -310,14 +311,118 @@ header > .header {
   gap: 20px;
 }
 
+.parkinglot-payment-wrapper .images > *{
+  flex: 1;
+}
+
+.parkinglot-payment-wrapper .images img{
+  width: 100%;
+  object-fit: contain;
+}
+
 .parkinglot-payment-wrapper .images > div{
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.parkinglot-payment-wrapper > .footer-logo{
-  position: absolute;
-  bottom: 0;
-  right: 10%;
+.parkinglot-payment-footer{
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.power-station-wrapper{
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: url(Assets/black-tesla-image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid white;
+}
+
+.power-station-header{
+  padding: 20px 0;
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.power-station-header > h2{
+  font-size: 2rem;
+  color: rgb(26, 166, 243);
+  background-color: white;
+  max-width: 800px;
+}
+
+.power-station-main{
+  padding: 20px 0;
+  max-width: 1200px;
+  margin-inline: auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.power-station-footer{
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+ justify-content: end;
+}
+
+.household-section{
+  min-height: 100vh;
+  background-color: black;
+  background: url(Assets/black-tesla-image.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 20px;
+}
+
+.household-header{
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.household-header > h2{
+  font-size: 2rem;
+  background-color: white;
+  color: rgb(26, 166, 243);
+  padding: 20px;
+}
+
+.household-main{
+  display: flex;
+  max-width: 1200px;
+  margin-block: 20px;
+  gap: 20px;
+  margin-inline: auto;
+}
+
+.household-main img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.household-main > *{
+  flex: 1;
+}
+
+.household-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.household-footer{
+  display: flex;
+  justify-content: end;
+  max-width: 1200px;
+  margin-inline: auto;
 }
