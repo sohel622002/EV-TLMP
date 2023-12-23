@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img{
+  width: 100%;
+}
+
 /* Home Section //////////////////////////////////////////////////////////////////////////////////////// */
 
 header,
@@ -439,7 +443,7 @@ header > .header {
   font-size: 1.2rem;
 }
 
-.register-sign-wrapper input{
+.register-sign-wrapper input {
   background: transparent;
   border: none;
   font-size: 1rem;
@@ -454,7 +458,7 @@ header > .header {
 }
 
 .register-sign-wrapper .row > div,
-.register-sign-wrapper > .col{
+.register-sign-wrapper > .col {
   display: flex;
   flex-direction: column;
 }
@@ -465,29 +469,29 @@ header > .header {
 
 /* Contact Us Section */
 
-.contact-us-wrapper{
+.contact-us-wrapper {
   position: absolute;
   inset: 0;
   padding: 80px 20px;
 }
 
-.contact-us-wrapper::before{
+.contact-us-wrapper::before {
   position: absolute;
-  content: '';
+  content: "";
   inset: 0;
   background-color: rgb(187 228 251);
   z-index: -1;
 }
 
-.EVCS{
+.EVCS {
   max-width: 100px;
 }
 
-.contact-us-main{
+.contact-us-main {
   text-align: center;
 }
 
-.timing-section{
+.timing-section {
   padding: 20px 60px;
   background-color: white;
   width: fit-content;
@@ -498,11 +502,60 @@ header > .header {
   margin-block: 10px;
 }
 
-.address{
+.address {
   color: rgb(26, 166, 243);
 }
 
-.clr-black{
+.clr-black {
   background-color: transparent !important;
   color: black !important;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.mobile-header-title{
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(26, 166, 243);
+}
+
+.mobile-header > button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .header-nav-links,
+  .header-title {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .main-section{
+    flex-direction: column;
+  }
+  .mobile-none{
+    display: none;
+  }
+}
+
+@media (max-width:500px){
+  .atom-image,
+  .qr-code{
+    display: none;
+  }
+
+  .main-header{
+    width: 100%;
+    text-wrap: wrap;
+    text-align: center;
+  }
 }
