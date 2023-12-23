@@ -11,10 +11,20 @@ const registerLoginContent = document
   .querySelector("[data-register-login]")
   .content.cloneNode(true)
   .querySelector(".main-section");
+const contactUsContent = document
+  .querySelector("[data-contact-us]")
+  .content.cloneNode(true)
+  .querySelector(".main-section");
+const tlmpContent = document
+  .querySelector("[data-tlmp]")
+  .content.cloneNode(true)
+  .querySelector(".main-section");
 
 const companyProfileLink = document.querySelector(".company-profile-link");
 const productCatalogueLink = document.querySelector(".product-catalogue-link");
-const registerLoginLink = document.querySelector(".register-link")
+const registerLoginLink = document.querySelector(".register-link");
+const contactUsLink = document.querySelector(".contact-link");
+const tlmpLink = document.querySelector(".tlmp-link");
 
 companyProfileLink.addEventListener("click", () => {
   mainContent.innerHTML = "";
@@ -29,4 +39,14 @@ productCatalogueLink.addEventListener("click", () => {
 registerLoginLink.addEventListener("click", () => {
   mainContent.innerHTML = "";
   mainContent.append(registerLoginContent);
+});
+
+contactUsLink.addEventListener("click", () => {
+  mainContent.innerHTML = "";
+  mainContent.append(contactUsContent);
+});
+
+tlmpLink.addEventListener("click", () => {
+  mainContent.innerHTML = "";
+  mainContent.append(tlmpContent);
 });

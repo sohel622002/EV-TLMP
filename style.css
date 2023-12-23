@@ -462,3 +462,47 @@ header > .header {
 .register-sign-wrapper .row > * {
   flex: 1;
 }
+
+/* Contact Us Section */
+
+.contact-us-wrapper{
+  position: absolute;
+  inset: 0;
+  padding: 80px 20px;
+}
+
+.contact-us-wrapper::before{
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: rgb(187 228 251);
+  z-index: -1;
+}
+
+.EVCS{
+  max-width: 100px;
+}
+
+.contact-us-main{
+  text-align: center;
+}
+
+.timing-section{
+  padding: 20px 60px;
+  background-color: white;
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-block: 10px;
+}
+
+.address{
+  color: rgb(26, 166, 243);
+}
+
+.clr-black{
+  background-color: transparent !important;
+  color: black !important;
+}
