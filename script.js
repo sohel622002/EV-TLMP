@@ -7,9 +7,14 @@ const productCatalogueContent = document
   .querySelector("[data-catalogue-temp]")
   .content.cloneNode(true)
   .querySelector(".wrappper");
+const registerLoginContent = document
+  .querySelector("[data-register-login]")
+  .content.cloneNode(true)
+  .querySelector(".main-section");
 
 const companyProfileLink = document.querySelector(".company-profile-link");
-const productCatalogueLink = document.querySelector('.product-catalogue-link')
+const productCatalogueLink = document.querySelector(".product-catalogue-link");
+const registerLoginLink = document.querySelector(".register-link")
 
 companyProfileLink.addEventListener("click", () => {
   mainContent.innerHTML = "";
@@ -17,6 +22,11 @@ companyProfileLink.addEventListener("click", () => {
 });
 
 productCatalogueLink.addEventListener("click", () => {
-    mainContent.innerHTML = "";
-    mainContent.append(productCatalogueContent);
-  });
+  mainContent.innerHTML = "";
+  mainContent.append(productCatalogueContent);
+});
+
+registerLoginLink.addEventListener("click", () => {
+  mainContent.innerHTML = "";
+  mainContent.append(registerLoginContent);
+});
