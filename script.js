@@ -6,7 +6,7 @@ const companyProfileContent = document
 const productCatalogueContent = document
   .querySelector("[data-catalogue-temp]")
   .content.cloneNode(true)
-  .querySelector(".main-section");
+  .querySelector(".wrappper");
 
 const companyProfileLink = document.querySelector(".company-profile-link");
 const productCatalogueLink = document.querySelector('.product-catalogue-link')

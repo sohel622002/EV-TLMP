@@ -184,10 +184,9 @@ header > .header {
   font-size: 1.2rem;
 }
 
-
 /* Catalogue Section */
 
-.catelogue-pera-container{
+.catelogue-pera-container {
   position: absolute;
   top: 15%;
   display: flex;
@@ -196,13 +195,13 @@ header > .header {
   padding: 30px;
 }
 
-.catelogue-pera-container > h2{
+.catelogue-pera-container > h2 {
   font-size: 1.7rem;
   background-color: white;
   color: rgb(26, 166, 243);
 }
 
-.powerbank-chanrgers-wrapper{
+.powerbank-chanrgers-wrapper {
   min-height: 100vh;
   background: url(Assets/black-tesla-image.webp);
   background-repeat: no-repeat;
@@ -214,7 +213,7 @@ header > .header {
   justify-content: center;
 }
 
-.poerbank-chargers-container{
+.poerbank-chargers-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -222,7 +221,7 @@ header > .header {
   text-align: center;
 }
 
-.powerback-chargers-header{
+.powerback-chargers-header {
   max-width: 1200px;
   margin-inline: auto;
   display: flex;
@@ -231,14 +230,14 @@ header > .header {
   margin-bottom: 20px;
 }
 
-.powerback-chargers-header > h1{
+.powerback-chargers-header > h1 {
   text-wrap: nowrap;
   background-color: white;
   color: rgb(26, 166, 243);
   padding: 5px;
 }
 
-.poerbank-images{
+.poerbank-images {
   display: grid;
   max-width: 1000px;
   margin-inline: auto;
@@ -246,27 +245,27 @@ header > .header {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.powerimage > img{
+.powerimage > img {
   object-fit: contain;
 }
 
-.powerimage:nth-child(2){
+.powerimage:nth-child(2) {
   grid-column-start: 3;
 }
 
-.powerimage:nth-child(3){
+.powerimage:nth-child(3) {
   grid-column-start: 2;
 }
 
-.powerimage:nth-child(4){
+.powerimage:nth-child(4) {
   grid-column-start: 1;
 }
 
-.powerimage:nth-child(5){
+.powerimage:nth-child(5) {
   grid-column-start: 3;
 }
 
-.parkinglot-payment-wrapper{
+.parkinglot-payment-wrapper {
   border-top: 2px solid white;
   min-height: 100vh;
   background: url(Assets/black-tesla-image.webp);
@@ -277,7 +276,7 @@ header > .header {
   border-bottom: 2px solid white;
 }
 
-.parkinglot-payment-header{
+.parkinglot-payment-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,13 +285,13 @@ header > .header {
   gap: 20px;
 }
 
-.parkinglot-payment-header > h2{
+.parkinglot-payment-header > h2 {
   background-color: white;
   color: rgb(26, 166, 243);
   font-size: 2.2rem;
 }
 
-.parkinglot-payment-wrapper{
+.parkinglot-payment-wrapper {
   position: relative;
 }
 
@@ -301,32 +300,32 @@ header > .header {
   margin-inline: auto;
 }
 
-.parkinglot-payment-wrapper img{
+.parkinglot-payment-wrapper img {
   object-fit: contain;
 }
 
-.parkinglot-payment-wrapper .images{
+.parkinglot-payment-wrapper .images {
   display: flex;
   margin-top: 20px;
   gap: 20px;
 }
 
-.parkinglot-payment-wrapper .images > *{
+.parkinglot-payment-wrapper .images > * {
   flex: 1;
 }
 
-.parkinglot-payment-wrapper .images img{
+.parkinglot-payment-wrapper .images img {
   width: 100%;
   object-fit: contain;
 }
 
-.parkinglot-payment-wrapper .images > div{
+.parkinglot-payment-wrapper .images > div {
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.parkinglot-payment-footer{
+.parkinglot-payment-footer {
   max-width: 1200px;
   margin-inline: auto;
   display: flex;
@@ -334,7 +333,7 @@ header > .header {
   margin-top: 20px;
 }
 
-.power-station-wrapper{
+.power-station-wrapper {
   min-height: 100vh;
   padding: 50px 20px;
   background: url(Assets/black-tesla-image.webp);
@@ -343,7 +342,7 @@ header > .header {
   border-bottom: 2px solid white;
 }
 
-.power-station-header{
+.power-station-header {
   padding: 20px 0;
   max-width: 1200px;
   margin-inline: auto;
@@ -351,14 +350,14 @@ header > .header {
   gap: 30px;
 }
 
-.power-station-header > h2{
+.power-station-header > h2 {
   font-size: 2rem;
   color: rgb(26, 166, 243);
   background-color: white;
   max-width: 800px;
 }
 
-.power-station-main{
+.power-station-main {
   padding: 20px 0;
   max-width: 1200px;
   margin-inline: auto;
@@ -367,14 +366,14 @@ header > .header {
   grid-template-columns: 1fr 1fr;
 }
 
-.power-station-footer{
+.power-station-footer {
   max-width: 1200px;
   padding: 20px;
   display: flex;
- justify-content: end;
+  justify-content: end;
 }
 
-.household-section{
+.household-section {
   min-height: 100vh;
   background-color: black;
   background: url(Assets/black-tesla-image.webp);
@@ -383,21 +382,21 @@ header > .header {
   padding: 50px 20px;
 }
 
-.household-header{
+.household-header {
   max-width: 1200px;
   margin-inline: auto;
   display: flex;
   gap: 20px;
 }
 
-.household-header > h2{
+.household-header > h2 {
   font-size: 2rem;
   background-color: white;
   color: rgb(26, 166, 243);
   padding: 20px;
 }
 
-.household-main{
+.household-main {
   display: flex;
   max-width: 1200px;
   margin-block: 20px;
@@ -405,24 +404,61 @@ header > .header {
   margin-inline: auto;
 }
 
-.household-main img{
+.household-main img {
   width: 100%;
   object-fit: contain;
 }
 
-.household-main > *{
+.household-main > * {
   flex: 1;
 }
 
-.household-grid{
+.household-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.household-footer{
+.household-footer {
   display: flex;
   justify-content: end;
   max-width: 1200px;
   margin-inline: auto;
+}
+
+/* Register Sign In Section*/
+
+.register-sign-wrapper {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  padding: 80px 20px 20px 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.register-sign-wrapper input{
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+}
+
+.register-sign-wrapper .row {
+  display: flex;
+  gap: 30px;
+}
+
+.register-sign-wrapper .row > div,
+.register-sign-wrapper > .col{
+  display: flex;
+  flex-direction: column;
+}
+
+.register-sign-wrapper .row > * {
+  flex: 1;
 }
