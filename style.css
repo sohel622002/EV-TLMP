@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
-img{
+img {
   width: 100%;
+}
+
+.footer-logo {
+  max-width: 350px;
 }
 
 /* Home Section //////////////////////////////////////////////////////////////////////////////////////// */
@@ -517,7 +521,7 @@ header > .header {
   display: none;
 }
 
-.mobile-header-title{
+.mobile-header-title {
   font-size: 2rem;
   color: white;
   background-color: rgb(26, 166, 243);
@@ -530,7 +534,7 @@ header > .header {
   font-size: 20px;
 }
 
-.mobile-navigations-wrapper{
+.mobile-navigations-wrapper {
   position: absolute;
   background-color: white;
   inset: 0;
@@ -541,15 +545,15 @@ header > .header {
   justify-content: center;
   font-size: 1.5rem;
   transform: translateX(-102%);
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-.mobile-nav-header{
+.mobile-nav-header {
   text-align: end;
   margin-bottom: 20px;
 }
 
-.mobile-navigations-wrapper ul{
+.mobile-navigations-wrapper ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -557,16 +561,31 @@ header > .header {
   text-align: center;
 }
 
-.mobile-navigations-wrapper li{
+.mobile-navigations-wrapper li {
   border-bottom: 2px solid black;
   padding: 10px;
+  cursor: pointer;
+}
+
+.login-reg-container{
+  display: flex;
+  justify-content: end;
+}
+
+.login-registar-button {
+  padding: 10px;
+  border: none;
+  background: rgb(26, 166, 243);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 @media (max-width: 1200px) {
-  header{
+  header {
     background-color: rgb(26, 166, 243);
   }
-  .mobile-toggle-btn{
+  .mobile-toggle-btn {
     color: white;
   }
   .header-nav-links,
@@ -579,70 +598,91 @@ header > .header {
     gap: 10px;
     justify-content: space-between;
   }
-  .main-section{
+  .main-section {
     flex-direction: column;
   }
-  .mobile-none{
+  .mobile-none {
     display: none;
   }
   .powerback-chargers-header > h1 {
     text-wrap: wrap;
   }
   .images,
-  .household-main{
+  .household-main {
     flex-direction: column;
   }
-  .images img{
+  .images img {
     max-height: 250px;
   }
-  .footer-logo{
+  .footer-logo {
     max-width: 250px;
   }
-}
 
-@media (max-width:750px){
-  .catelogue-pera-container{
-    position: inherit;
+  .contact-us-wrapper{
+    padding: 30px 20px;
   }
 }
 
-@media (max-width:900px) {
-  .company-profile-content{
+@media (max-width: 750px) {
+  .catelogue-pera-container {
+    position: inherit;
+  }
+  .main-image-wrapper.contact-us > img{
+    display: none;
+  }
+  .contact-us-wrapper{
+    position: inherit;
+    padding: 63px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .company-profile-content {
     flex-direction: column;
     padding: 20px;
   }
   .parkinglot-payment-header > h2,
   .power-station-header > h2,
   .household-header > h2,
-  .powerback-chargers-header > h1{
+  .powerback-chargers-header > h1 {
     font-size: 1.2rem;
+  }
+  .register-sign-wrapper {
+    position: inherit;
   }
 }
 
-@media (max-width:570px){
+@media (max-width: 570px) {
   .household-header,
   .power-station-header,
   .parkinglot-payment-header,
-  .powerback-chargers-header{
+  .powerback-chargers-header {
     flex-direction: column;
   }
 }
 
-@media (max-width:500px){
+@media (max-width: 500px) {
   .atom-image,
-  .qr-code{
+  .qr-code {
     display: none;
   }
 
-  .main-header{
+  .main-header {
     width: 100%;
     text-wrap: wrap;
     text-align: center;
   }
+
+  .register-sign-wrapper .row {
+    flex-direction: column;
+  }
 }
 
-@media (max-width:450px) {
-  .catelogue-pera-container > h2{
+@media (max-width: 450px) {
+  .catelogue-pera-container > h2 {
     font-size: 1.3rem;
+  }
+  .mobile-header-title{
+    font-size: 24px;
   }
 }

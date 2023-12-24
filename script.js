@@ -92,3 +92,19 @@ document.querySelector(".product-catalogue-mobile-link").addEventListener("click
   changeMainData(productCatalogueContent);
   closeMobileSidebar();
 });
+
+document.querySelector(".register-signin-mobile-link").addEventListener("click", () => {
+  changeMainData(registerLoginContent);
+  closeMobileSidebar();
+});
+
+document.querySelector(".contact-mobile-link").addEventListener("click", () => {
+  changeMainData(contactUsContent);
+  closeMobileSidebar();
+});
+
+document.querySelector(".tlmp-sub-mobile-link").addEventListener("click", () => {
+  changeMainData(tlmpContent);
+  closeMobileSidebar();
+});
+
