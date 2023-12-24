@@ -3,20 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>EV Petrol Pump</title>
   </head>
   <body>
+    <div class="mobile-navigations-wrapper">
+      <div>
+        <div class="mobile-nav-header">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li class="home-mobile-link">HOME</li>
+          <li class="company-profile-mobile-link">COMPANY PROFILE</li>
+          <li class="product-catalogue-mobile-link">PRODUCT CATALOGUE</li>
+          <li class="register-signin-mobile-link">REGISTER / SIGN IN</li>
+          <li class="contact-mobile-link">CONTACT</li>
+          <li class="tlmp-sub-mobile-link">TLMP SUBSIDIARY</li>
+        </ul>
+      </div>
+    </div>
     <header>
       <div class="logo-image">
-        <img src="Assets/logo.webp" alt="image" class="app-logo mobile-none" />
+        <img src="Assets/logo.webp" alt="image" class="app-logo mobile-none main-content-logo-image" />
       </div>
       <div class="header">
         <div class="header-title">TLMP MOTORSPORT TRADING SERVICE</div>
         <div class="mobile-header">
           <h2 class="mobile-header-title">TLMP MOTORSPORT TRADING SERVICE</h2>
-          <button><i class="fa-solid fa-bars"></i></button>
+          <button class="mobile-toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
         <div class="header-nav-links">
           <span class="company-profile-link"> COMPANY PROFILE </span>
@@ -58,6 +81,38 @@
         </div>
       </div>
     </main>
+
+    <template data-home>
+      <div class="main-section">
+        <div class="main-image-wrapper">
+          <img src="Assets/white-tesla-image.webp" alt="tesla-image" />
+          <h2 class="main-header">EV COMMERCIAL PAYMENT GATEWAY</h2>
+
+          <img
+            src="Assets/atome-image.webp"
+            class="atom-image"
+            alt="atom-image"
+          />
+          <img src="Assets/qr-code.webp" class="qr-code" alt="qr" />
+        </div>
+        <div class="main-sidebar">
+          <div class="login-sec">
+            <img src="Assets/logo.webp" alt="logo" class="app-logo" />
+            <div>
+              <label for="login">LOGIN ID:</label>
+              <input type="text" id="login" />
+            </div>
+            <div>
+              <label for="password">PASSWORD:</label>
+              <input type="text" id="password" />
+            </div>
+          </div>
+          <div class="iso-section">
+            <img src="Assets/ISO-image.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </template>
 
     <template data-company-profile-temp>
       <div class="company-profile-wrapper">
@@ -177,6 +232,7 @@
               <img
                 src="Assets/company-footer-logos.png"
                 alt="footer-company-logos"
+                class="footer-logo"
               />
             </div>
           </div>
@@ -220,7 +276,7 @@
             <img src="Assets/power-station-04.png" alt="power-station" />
           </div>
           <div class="power-station-footer">
-            <img src="Assets/company-footer-logos.png" alt="logo" />
+            <img src="Assets/company-footer-logos.png" alt="logo" class="footer-logo"/>
           </div>
         </div>
         <div class="household-section">
@@ -238,7 +294,7 @@
             </div>
           </div>
           <div class="household-footer">
-            <img src="Assets/company-footer-logos.png" alt="logos" />
+            <img src="Assets/company-footer-logos.png" alt="logos" class="footer-logo"/>
           </div>
         </div>
       </div>

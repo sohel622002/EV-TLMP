@@ -351,6 +351,7 @@ header > .header {
   max-width: 1200px;
   margin-inline: auto;
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -390,6 +391,7 @@ header > .header {
   max-width: 1200px;
   margin-inline: auto;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -528,7 +530,45 @@ header > .header {
   font-size: 20px;
 }
 
+.mobile-navigations-wrapper{
+  position: absolute;
+  background-color: white;
+  inset: 0;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transform: translateX(-102%);
+  transition: all .3s linear;
+}
+
+.mobile-nav-header{
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.mobile-navigations-wrapper ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.mobile-navigations-wrapper li{
+  border-bottom: 2px solid black;
+  padding: 10px;
+}
+
 @media (max-width: 1200px) {
+  header{
+    background-color: rgb(26, 166, 243);
+  }
+  .mobile-toggle-btn{
+    color: white;
+  }
   .header-nav-links,
   .header-title {
     display: none;
@@ -545,6 +585,47 @@ header > .header {
   .mobile-none{
     display: none;
   }
+  .powerback-chargers-header > h1 {
+    text-wrap: wrap;
+  }
+  .images,
+  .household-main{
+    flex-direction: column;
+  }
+  .images img{
+    max-height: 250px;
+  }
+  .footer-logo{
+    max-width: 250px;
+  }
+}
+
+@media (max-width:750px){
+  .catelogue-pera-container{
+    position: inherit;
+  }
+}
+
+@media (max-width:900px) {
+  .company-profile-content{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .parkinglot-payment-header > h2,
+  .power-station-header > h2,
+  .household-header > h2,
+  .powerback-chargers-header > h1{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:570px){
+  .household-header,
+  .power-station-header,
+  .parkinglot-payment-header,
+  .powerback-chargers-header{
+    flex-direction: column;
+  }
 }
 
 @media (max-width:500px){
@@ -557,5 +638,11 @@ header > .header {
     width: 100%;
     text-wrap: wrap;
     text-align: center;
+  }
+}
+
+@media (max-width:450px) {
+  .catelogue-pera-container > h2{
+    font-size: 1.3rem;
   }
 }
