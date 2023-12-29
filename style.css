@@ -211,10 +211,11 @@ header > .header {
 
 .powerbank-chanrgers-wrapper {
   min-height: 100vh;
-  background: url(Assets/black-tesla-image.webp);
+  background: url(images/bg2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  background-position: center;
   color: white;
   display: flex;
   align-items: center;
@@ -276,10 +277,11 @@ header > .header {
 .parkinglot-payment-wrapper {
   border-top: 2px solid white;
   min-height: 100vh;
-  background: url(Assets/black-tesla-image.webp);
+  background: url(images/bg2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  background-position: center;
   padding: 50px 20px;
   border-bottom: 2px solid white;
 }
@@ -344,9 +346,10 @@ header > .header {
 .power-station-wrapper {
   min-height: 100vh;
   padding: 50px 20px;
-  background: url(Assets/black-tesla-image.webp);
+  background: url(images/bg2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-bottom: 2px solid white;
 }
 
@@ -385,9 +388,10 @@ header > .header {
 .household-section {
   min-height: 100vh;
   background-color: black;
-  background: url(Assets/black-tesla-image.webp);
+  background: url(images/bg2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 50px 20px;
 }
 
@@ -442,11 +446,14 @@ header > .header {
   position: absolute;
   width: 100%;
   inset: 0;
-  padding: 80px 20px 20px 20px;
+  padding: 40px 20px;
+  font-size: 1.2rem;
+}
+
+.register-sign-wrapper form {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  font-size: 1.2rem;
 }
 
 .register-sign-wrapper input {
@@ -567,7 +574,7 @@ header > .header {
   cursor: pointer;
 }
 
-.login-reg-container{
+.login-reg-container {
   display: flex;
   justify-content: end;
 }
@@ -579,6 +586,38 @@ header > .header {
   color: white;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+.register-login-form-wrappper {
+  background: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.register-login-form-wrappper > h2,
+.register-login-form-wrappper .register-sign-wrapper {
+  position: inherit;
+}
+
+.register-login-form-wrappper > h2 {
+  text-align: center;
+}
+
+.register-sign-wrapper .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-sec button{
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, .3);
+  cursor: pointer;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -600,6 +639,7 @@ header > .header {
   }
   .main-section {
     flex-direction: column;
+    align-items: normal;
   }
   .mobile-none {
     display: none;
@@ -618,7 +658,7 @@ header > .header {
     max-width: 250px;
   }
 
-  .contact-us-wrapper{
+  .contact-us-wrapper {
     padding: 30px 20px;
   }
 }
@@ -628,10 +668,10 @@ header > .header {
     position: inherit;
     padding: 30px 0px;
   }
-  .main-image-wrapper.contact-us > img{
+  .main-image-wrapper.contact-us > img {
     display: none;
   }
-  .contact-us-wrapper{
+  .contact-us-wrapper {
     position: inherit;
     padding: 63px 20px;
   }
@@ -683,7 +723,7 @@ header > .header {
   .catelogue-pera-container > h2 {
     font-size: 1.3rem;
   }
-  .mobile-header-title{
+  .mobile-header-title {
     font-size: 24px;
   }
 }
