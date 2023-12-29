@@ -140,7 +140,7 @@ header > .header {
 
 .company-profile-wrapper {
   position: relative;
-  background: url(Assets/white-tesla-image.webp);
+  background: url(images/bg.png);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -626,6 +626,7 @@ header > .header {
 @media (max-width: 750px) {
   .catelogue-pera-container {
     position: inherit;
+    padding: 30px 0px;
   }
   .main-image-wrapper.contact-us > img{
     display: none;
